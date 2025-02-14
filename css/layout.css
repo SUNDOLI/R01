@@ -1,0 +1,116 @@
+:root {
+    --inner-size: 1170px
+}
+
+.default {
+    padding: 80px 0;
+}
+
+.inner {
+    max-width: var(--inner-size);
+    margin: 0 auto;
+}
+
+
+.title {
+    margin-bottom: 40px;
+}
+
+.title span {
+    display: block;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+.title h2 {
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.title p {
+    font-size: 16px;
+    margin-top: 8px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+
+p {
+    font-size: 16px;
+    margin-top: 8px;
+    text-align: center;
+}
+
+@media (max-width:1202px) {
+    .inner {
+        max-width: var(--inner-size);
+        margin: 0 auto;
+        /* r */
+        margin: 0 16px;
+    }
+
+    .title {
+        /* r */
+        margin: 0 16px;
+        margin-bottom: 40px;
+    }
+
+}
+
+@media (max-width:768px) {
+    .inner {
+        max-width: var(--inner-size);
+        margin: 0 auto;
+        /* r */
+        margin: 0 16px;
+    }
+
+    .title {
+        /* r */
+        margin: 0 16px;
+        margin-bottom: 40px;
+    }
+
+    .title span {
+        display: block;
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 8px;
+        /* r */
+
+
+    }
+
+    .title h2 {
+        font-size: 32px;
+        font-weight: 500;
+        text-align: center;
+        /* r */
+        font-size: 28px;
+        line-height: 1.5;
+        text-align: left;
+        word-break: keep-all;
+
+    }
+
+    .title h3 {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+
+    .title p {
+        font-size: 16px;
+        margin-top: 8px;
+        text-align: center;
+        /* r */
+        text-align: left;
+    }
+
+}
