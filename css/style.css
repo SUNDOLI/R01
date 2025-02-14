@@ -286,6 +286,10 @@
         /* r */
         padding: 0 16px;
         word-break: keep-all;
+        color: #fff;
+        z-index: 999;
+        text-shadow: 2px 2px 5px #333;
+
     }
 
     .main_visual .main_visual_slide .slg span {
@@ -293,9 +297,10 @@
         font-size: 24px;
         font-weight: 600;
         margin-bottom: 8px;
-        color: #333;
+        /* color: #333; */
         /* r */
         font-size: 20px;
+        color: #fff;
     }
 
     .main_visual .main_visual_slide .slg h2 {
@@ -316,8 +321,17 @@
         height: 640px;
         /* r */
         height: 450px;
-
     }
+
+    .main_visual .main_visual_slide .itm::before {
+        content: "";
+        position: absolute;
+        inset: 0 0 0 0;
+        background: #333;
+        z-index: 999;
+        opacity: 0.2;
+    }
+
 
     .main_visual .main_visual_slide .itm01 {
         background: url(../images/main_visual01.jpg) no-repeat 40% center/cover;
