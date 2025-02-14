@@ -64,6 +64,12 @@ p {
 }
 
 @media (max-width:768px) {
+    .default {
+        padding: 80px 0;
+        /* r */
+        padding: 60px 0;
+    }
+
     .inner {
         max-width: var(--inner-size);
         margin: 0 auto;

@@ -314,6 +314,8 @@
 
     .main_visual .main_visual_slide .itm {
         height: 640px;
+        /* r */
+        height: 500px;
 
     }
 
