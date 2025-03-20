@@ -246,7 +246,7 @@
 
 .main_visual .swiper-pagination .swiper-pagination-bullet-active {
     width: 90px;
-    transition: width .5s;
+    transition: width 0.5s;
     background: tan;
     border: 1px solid tan;
 }
@@ -389,6 +389,7 @@
 
 .main_content .banner P {
     text-align: left;
+    font-size: 14px;
 }
 
 @media (max-width:768px) {
@@ -676,4 +677,46 @@
     }
 }
 
-@media (max-width:786px) {}
+.to_top {
+    position: fixed;
+    bottom: 80px;
+    right: -80px;
+    z-index: 999;
+
+    width: 40px;
+    height: 40px;
+    background: rgba(85, 85, 85, 0.5);
+    border-radius: 50%;
+
+
+    transition: 0.4s;
+}
+
+.to_top.on {
+    right: 80px;
+}
+
+@media (max-width:768px) {
+    .to_top {
+        position: fixed;
+        bottom: 80px;
+        right: -80px;
+        z-index: 999;
+
+        width: 40px;
+        height: 40px;
+        background: rgba(85, 85, 85, 0.5);
+        border-radius: 50%;
+
+        transition: 0.4s;
+        /* r */
+        bottom: 0;
+        border-radius: 0;
+    }
+
+    .to_top.on {
+        right: 80px;
+        /* r */
+        right: 0;
+    }
+}
